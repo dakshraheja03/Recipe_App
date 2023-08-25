@@ -6,35 +6,20 @@
 }
 
 body {
-	background: #f6f5f7;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
 	font-family: 'Montserrat', sans-serif;
-	height: 100vh;
-	margin: -20px 0 50px;
 }
 
-h1 {
+.auth-heading {
 	font-weight: bold;
 	margin: 0;
 }
 
-h2 {
-	text-align: center;
-}
-
-p {
+.auth-para {
 	font-size: 14px;
 	font-weight: 100;
 	line-height: 20px;
 	letter-spacing: 0.5px;
 	margin: 20px 0 30px;
-}
-
-span {
-	font-size: 12px;
 }
 
 a {
@@ -44,7 +29,7 @@ a {
 	margin: 15px 0;
 }
 
-button {
+.auth-btn {
 	border-radius: 20px;
 	border: 1px solid #FF4B2B;
 	background-color: #FF4B2B;
@@ -70,7 +55,7 @@ button.ghost {
 	border-color: #FFFFFF;
 }
 
-form {
+.form-auth {
 	background-color: #FFFFFF;
 	display: flex;
 	align-items: center;
