@@ -22,7 +22,7 @@ function App() {
   return (
     <Router>
       <Navbar/>
-      <Alert alertText={alertText} alert={alert} alertType={alertType} />
+      {/* <Alert alertText={alertText} alert={alert} alertType={alertType} /> */}
       <Routes>
         <Route exact path='/' element={<Auth showAlert={showAlert} />}></Route>
         <Route exact path='/home' element={<Home />}></Route>

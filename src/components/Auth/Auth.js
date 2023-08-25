@@ -89,7 +89,7 @@ function Auth(props) {
     }
   return (
     <>
-      <div className={`container ${signin ? '' : 'right-panel-active'} `} id="container" style={{marginTop:"80px"}}>
+      <div className={`auth-container ${signin ? '' : 'right-panel-active'} `} id="auth-container" style={{marginTop:"80px"}}>
         <div className="form-container sign-up-container">
           <form className="form-auth">
             <h1 className="auth-heading" style={{marginBottom:"5px"}}>Create Account</h1>
