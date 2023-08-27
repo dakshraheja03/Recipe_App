@@ -4,7 +4,7 @@ import './SideBar.css'
 function SideBar() {
   return (
     <>
-    <div className="flex-shrink-0 p-3 bg-dark" style={{border:"none",width:"200px",height:"100%",position:"fixed",top:"70px",bottom:"0px",overflow:"auto"}}>
+    <div className="flex-shrink-0 p-3 bg-dark" style={{border:"none",width:"150px",height:"100%",position:"fixed",top:"70px",bottom:"0px",overflow:"auto"}}>
         <ul className="list-unstyled ps-0">
         <li className="mb-1">
             <button className="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true" style={{color:"white",fontWeight:"bolder"}}>

@@ -16,13 +16,11 @@ function Home() {
   return (
     <>
     {/* <h2 style={{marginTop:"40px"}}>This is Home</h2> */}
-      <div className="row">
-        <div className="col-md-2">
-        <SideBar/>
-        </div>
-        <div className="container col-md-10">
-          <Recipe/>
-        </div>
+    <div className="d-flex">
+      <div style={{minWidth:"150px"}}>
+          <SideBar/>
+      </div>
+          <div style={{marginLeft:"80px",marginRight:"0px"}}><Recipe/></div>
       </div>
     </>
   )

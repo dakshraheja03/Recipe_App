@@ -20,14 +20,16 @@ function App() {
     }, 2000);
   }
   return (
+    <>
     <Router>
-      <Navbar/>
-      {/* <Alert alertText={alertText} alert={alert} alertType={alertType} /> */}
+    <Navbar/>
+    <Alert alertText={alertText} alert={alert} alertType={alertType} />
       <Routes>
         <Route exact path='/' element={<Auth showAlert={showAlert} />}></Route>
-        <Route exact path='/home' element={<Home />}></Route>
+        <Route exact path='/home' element={<Home showAlert={showAlert} />}></Route>
       </Routes>
     </Router>
+    </>
   );
 }
 

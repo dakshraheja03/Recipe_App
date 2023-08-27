@@ -1,14 +1,17 @@
 import React from 'react'
 
-function RecipeCard() {
+function RecipeCard(props) {
   return (
     <>
-    <div class="card" style={{width:"18rem",margin:"35px 0px"}}>
-        <img src="https://img.freepik.com/free-photo/freshly-italian-pizza-with-mozzarella-cheese-slice-generative-ai_188544-12347.jpg?w=2000" class="card-img-top" alt="..."/>
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            {/* <a href="#" class="btn btn-primary">Go somewhere</a> */}
+    <div className="card" style={{width:"20rem",borderRadius:"7%"}}>
+        <img src={props.image} className="card-img-top" alt='Not Available' style={{height:"250px", objectFit:"cover",borderTopLeftRadius:"7%",borderTopRightRadius:"7%"}} />
+        <div className="card-body">
+            <h5 className="card-title">{props.title}</h5>
+            <div className="d-flex" style={{justifyContent:"space-between",alignItems:"center"}}>
+              <div><p style={{fontStyle:"italic"}}>Price: Rs {props.price}</p></div>
+              <div><p style={{fontStyle:"italic"}}>Time: {props.time} Minutes</p></div>
+            </div>
+            {/* <a href="#" className="btn btn-primary">Go somewhere</a> */}
         </div>
     </div>
     </>
