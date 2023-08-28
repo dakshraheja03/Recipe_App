@@ -71,7 +71,7 @@ function IndiRecipe() {
                 </div>
               <div className="recipe-list">
                   <figure>
-                  <img style={{width:"550px",height:"auto",objectFit:"cover"}} src={`http://127.0.0.1:8000${indi.image}`} alt="Image Not Available"/>
+                  <img style={{width:"550px",height:"auto",objectFit:"cover"}} src={`http://127.0.0.1:8000${indi.image}`} alt="Not Available"/>
                 </figure>
               </div>
             </div>
