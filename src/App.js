@@ -7,6 +7,7 @@ import Alert from './components/Alert/Alert';
 import { useState} from 'react';
 import Home from './components/Home/Home';
 import RecipeState from './context/RecipeState';
+import IndiRecipe from './components/Recipe/IndiRecipe';
 
 function App() {
   const [alertText, setAlertText] = useState("")
@@ -29,6 +30,7 @@ function App() {
       <Routes>
         <Route exact path='/' element={<Auth showAlert={showAlert} />}></Route>
         <Route exact path='/home' element={<Home showAlert={showAlert} />}></Route>
+        <Route exact path='/home/recipe' element={<IndiRecipe showAlert={showAlert} />}></Route>
       </Routes>
     </Router>
     </RecipeState>

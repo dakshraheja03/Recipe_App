@@ -1,0 +1,29 @@
+.indi-details{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#272d3d;
+    color:#b69c6f;
+}
+
+.indi-recipe-elements{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 70px;
+}
+
+.recipe-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.recipe-list{
+    margin-left: 100px;
+}
+
+.ingredients{
+    text-align: center;
+}

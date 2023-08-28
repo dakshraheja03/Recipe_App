@@ -30,7 +30,7 @@ function Navbar() {
                 </li>
             </ul>
             {location.pathname!=='/' && <form className="d-flex">
-                <button className="btn btn-primary" style={{fontWeight:"bolder",marginRight:"10px"}} onClick={handleLogout}>Logout</button>
+                <button className="btn btn-primary" style={{fontWeight:"bolder",marginRight:"25px"}} onClick={handleLogout}>Logout</button>
             </form>}
             </div>
         </div>
