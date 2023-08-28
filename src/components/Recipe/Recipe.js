@@ -1,25 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, {useEffect, useContext} from "react";
+import RecipeContext from "../../context/RecipeContext";
 import RecipeCard from "./RecipeCard";
 import './Recipe.css'
 
 function Recipe() {
-  //Fetching all recipes
-  const recipeInitial=[];
-  const [recipes, setRecipes] = useState(recipeInitial)
-  const fetchRecipes=async()=>{
-    const url="http://localhost:8000/api/recipe/public/"
-    const response = await fetch(url, {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-        "Authorization" : `Bearer ${localStorage.getItem('token')}`
-      },
-    });
-    const json= await response.json();
-    // console.log(json)
-    setRecipes(json)
-  }
-
+  const context = useContext(RecipeContext);
+  const {recipes,fetchRecipes} = context;
   useEffect(() => {
     return () => {
         fetchRecipes();

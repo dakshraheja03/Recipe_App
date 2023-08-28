@@ -1,9 +1,11 @@
 import React from 'react'
 import './Navbar.css'
 import { Link } from 'react-router-dom'
+import { useLocation } from 'react-router-dom';
 import { useNavigate } from "react-router";
 
 function Navbar() {
+    let location = useLocation();
     let history=useNavigate()
     const handleLogout=(e)=>{
         e.preventDefault();
@@ -27,7 +29,7 @@ function Navbar() {
                 <Link className="nav-link" to="/home" style={{color:"white",margin:"0px"}}>Link</Link>
                 </li>
             </ul>
-            {localStorage.getItem('token') && <form className="d-flex">
+            {location.pathname!=='/' && <form className="d-flex">
                 <button className="btn btn-primary" style={{fontWeight:"bolder",marginRight:"10px"}} onClick={handleLogout}>Logout</button>
             </form>}
             </div>
